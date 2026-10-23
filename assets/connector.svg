@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64">
+<defs>
+  <radialGradient id="aC" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#e0fbff"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#0e7490"/>
+  </radialGradient>
+  <radialGradient id="aN" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#f1edff"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#5b21b6"/>
+  </radialGradient>
+  <radialGradient id="aO" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#ffe4f1"/><stop offset=".5" stop-color="#f472b6"/><stop offset="1" stop-color="#9d174d"/>
+  </radialGradient>
+  <radialGradient id="aS" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#fff7d6"/><stop offset=".5" stop-color="#fbbf24"/><stop offset="1" stop-color="#b45309"/>
+  </radialGradient>
+  <radialGradient id="aG" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#dcfce7"/><stop offset=".5" stop-color="#34d399"/><stop offset="1" stop-color="#047857"/>
+  </radialGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter><linearGradient id="v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa" stop-opacity=".1"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa" stop-opacity=".1"/></linearGradient></defs>
+<style>
+  .bond{stroke:#7dd3fc;stroke-opacity:.5;stroke-width:2.6;stroke-linecap:round;fill:none}
+  .flow{stroke:#fff;stroke-opacity:.9;stroke-width:2.6;stroke-linecap:round;fill:none;stroke-dasharray:4 70;animation:flow 3.2s linear infinite}
+  @keyframes flow{to{stroke-dashoffset:-74}}
+  .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+  .float{animation:float 8s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .spin{transform-box:fill-box;transform-origin:center;animation:spin 48s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .tw{animation:tw 4s ease-in-out infinite}
+  @keyframes tw{0%,100%{opacity:.12}50%{opacity:.85}}
+  .blink{animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .in{opacity:0;animation:in .9s ease-out forwards}
+  @keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .hs{transform-box:fill-box;transform-origin:center;animation:hs 3.6s ease-in-out infinite}
+  @keyframes hs{0%,100%{transform:scale(.55);opacity:.35}50%{transform:scale(1.05);opacity:.95}}
+  .march{animation:march 1.2s linear infinite}
+  @keyframes march{to{stroke-dashoffset:-10}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect x="595" y="0" width="3" height="64" fill="url(#v)"/><rect x="602" y="0" width="3" height="64" fill="url(#v)"/>
+<circle r="3" fill="#fff" filter="url(#glow)"><animateMotion dur="2.4s" repeatCount="indefinite" path="M600 0V64"/></circle>
+<g class="pulse"><circle cx="600" cy="32" r="9" fill="url(#aN)" filter="url(#glow)"/></g>
+</svg>

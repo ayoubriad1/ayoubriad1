@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+<title>Plantiva Sciences</title>
+<defs>
+  <radialGradient id="aC" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#e0fbff"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#0e7490"/>
+  </radialGradient>
+  <radialGradient id="aN" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#f1edff"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#5b21b6"/>
+  </radialGradient>
+  <radialGradient id="aO" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#ffe4f1"/><stop offset=".5" stop-color="#f472b6"/><stop offset="1" stop-color="#9d174d"/>
+  </radialGradient>
+  <radialGradient id="aS" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#fff7d6"/><stop offset=".5" stop-color="#fbbf24"/><stop offset="1" stop-color="#b45309"/>
+  </radialGradient>
+  <radialGradient id="aG" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#dcfce7"/><stop offset=".5" stop-color="#34d399"/><stop offset="1" stop-color="#047857"/>
+  </radialGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#090e21"/><stop offset="1" stop-color="#130f30"/></linearGradient>
+  <linearGradient id="border" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="400">
+    <stop offset="0" stop-color="#34d399"/><stop offset=".5" stop-color="#34d399" stop-opacity=".06"/><stop offset="1" stop-color="#34d399"/>
+    <animateTransform attributeName="gradientTransform" type="rotate" values="0 600 200;360 600 200" dur="10s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="bnr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050816"/><stop offset="1" stop-color="#0a0d22"/></linearGradient>
+  <radialGradient id="bglow"><stop offset="0" stop-color="#34d399" stop-opacity=".16"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#94a3b8"/></pattern>
+  <radialGradient id="heat"><stop offset="0" stop-color="#fef08a"/><stop offset=".35" stop-color="#fb923c"/><stop offset=".7" stop-color="#ef4444" stop-opacity=".6"/><stop offset="1" stop-color="#ef4444" stop-opacity="0"/></radialGradient>
+  <clipPath id="sc"><rect width="660" height="352" rx="18"/></clipPath>
+  <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f2a1d"/><stop offset="1" stop-color="#160f0a"/></linearGradient>
+  <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6ee7b7"/><stop offset="1" stop-color="#0d9488"/></linearGradient>
+  <clipPath id="vc"><path d="M482 70H518V108C560 120 575 152 575 182C575 224 542 250 500 250C458 250 425 224 425 182C425 152 440 120 482 108Z"/></clipPath></defs>
+<style>
+  .bond{stroke:#7dd3fc;stroke-opacity:.5;stroke-width:2.6;stroke-linecap:round;fill:none}
+  .flow{stroke:#fff;stroke-opacity:.9;stroke-width:2.6;stroke-linecap:round;fill:none;stroke-dasharray:4 70;animation:flow 3.2s linear infinite}
+  @keyframes flow{to{stroke-dashoffset:-74}}
+  .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+  .float{animation:float 8s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .spin{transform-box:fill-box;transform-origin:center;animation:spin 48s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .tw{animation:tw 4s ease-in-out infinite}
+  @keyframes tw{0%,100%{opacity:.12}50%{opacity:.85}}
+  .blink{animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .in{opacity:0;animation:in .9s ease-out forwards}
+  @keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .hs{transform-box:fill-box;transform-origin:center;animation:hs 3.6s ease-in-out infinite}
+  @keyframes hs{0%,100%{transform:scale(.55);opacity:.35}50%{transform:scale(1.05);opacity:.95}}
+  .march{animation:march 1.2s linear infinite}
+  @keyframes march{to{stroke-dashoffset:-10}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  .grow{stroke-dasharray:260;stroke-dashoffset:260;animation:grow 8s ease-out infinite}
+  @keyframes grow{0%{stroke-dashoffset:260;opacity:1}30%,90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+  .leaf{transform-box:fill-box;transform-origin:center;animation:leaf 8s ease-out infinite}
+  @keyframes leaf{0%,22%{transform:scale(0)}36%,90%{transform:scale(1)}100%{transform:scale(0)}}
+  .bloom{transform-box:fill-box;transform-origin:center;animation:bloom 8s ease-out infinite}
+  @keyframes bloom{0%,34%{transform:scale(0);opacity:0}44%,90%{transform:scale(1);opacity:1}100%{transform:scale(0);opacity:0}}
+  .bub{animation:bub 2.6s ease-in infinite}
+  @keyframes bub{0%{transform:translateY(0);opacity:0}20%{opacity:.9}100%{transform:translateY(-80px);opacity:0}}
+  .ul{transform-box:fill-box;transform-origin:0 50%;animation:ul 4s ease-in-out infinite}
+  @keyframes ul{0%,100%{transform:scaleX(1)}50%{transform:scaleX(1.8)}}
+</style>
+<rect x="1" y="1" width="1198" height="398" rx="24" fill="url(#cbg)"/>
+<g transform="translate(24 24)">
+  <g clip-path="url(#sc)">
+    <rect width="660" height="352" fill="url(#bnr)"/>
+    <rect width="660" height="352" fill="url(#dots)" opacity=".1"/>
+    <ellipse cx="330" cy="176" rx="330" ry="200" fill="url(#bglow)"/>
+    <text x="24" y="38" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#64748b">// plants → compounds → your mix</text><rect x="0" y="300" width="660" height="52" fill="url(#soil)"/><line x1="0" y1="300" x2="660" y2="300" stroke="#a16207" stroke-opacity=".5"/><path class="grow" d="M90 300C78 250 104 180 90 120" stroke="#4ade80" stroke-width="4" fill="none" stroke-linecap="round"/><g class="leaf" style="animation-delay:0s"><ellipse cx="73" cy="255" rx="17" ry="7" transform="rotate(28 73 255)" fill="#22c55e" fill-opacity=".75" stroke="#86efac" stroke-opacity=".6"/></g><g class="leaf" style="animation-delay:0.15s"><ellipse cx="107" cy="215" rx="17" ry="7" transform="rotate(-28 107 215)" fill="#22c55e" fill-opacity=".75" stroke="#86efac" stroke-opacity=".6"/></g><g class="leaf" style="animation-delay:0.3s"><ellipse cx="73" cy="175" rx="17" ry="7" transform="rotate(28 73 175)" fill="#22c55e" fill-opacity=".75" stroke="#86efac" stroke-opacity=".6"/></g><g class="bloom"><line class="bond" x1="88.3" y1="97.94" x2="97.83" y2="103.44"/><line class="bond" x1="91.7" y1="92.06" x2="101.23" y2="97.56"/><line class="flow" style="animation-delay:-0s" x1="90" y1="95" x2="99.53" y2="100.5"/><line class="bond" x1="99.53" y1="100.5" x2="99.53" y2="111.5"/><line class="bond" x1="97.83" y1="108.56" x2="88.3" y2="114.06"/><line class="bond" x1="101.23" y1="114.44" x2="91.7" y2="119.94"/><line class="bond" x1="90" y1="117" x2="80.47" y2="111.5"/><line class="bond" x1="83.87" y1="111.5" x2="83.87" y2="100.5"/><line class="bond" x1="77.07" y1="111.5" x2="77.07" y2="100.5"/><line class="bond" x1="80.47" y1="100.5" x2="90" y2="95"/><g class="pulse" style="animation-delay:-0s"><circle cx="90" cy="95" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-0.45s"><circle cx="99.53" cy="100.5" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-0.9s"><circle cx="99.53" cy="111.5" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-1.35s"><circle cx="90" cy="117" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-1.8s"><circle cx="80.47" cy="111.5" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-2.25s"><circle cx="80.47" cy="100.5" r="4" fill="url(#aG)"/></g></g><g opacity="0"><circle cx="-6" cy="3" r="4" fill="url(#aG)"/><circle cx="6" cy="3" r="4" fill="url(#aG)"/><circle cy="-5" r="4.5" fill="url(#aS)"/>
+      <animateMotion path="M90 106Q295 30 500 180" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.5;0.7;1"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.495;0.5;0.69;0.71;1" dur="8s" repeatCount="indefinite"/></g><path class="grow" d="M190 300C178 250 204 152 190 92" stroke="#4ade80" stroke-width="4" fill="none" stroke-linecap="round"/><g class="leaf" style="animation-delay:0s"><ellipse cx="173" cy="255" rx="17" ry="7" transform="rotate(28 173 255)" fill="#22c55e" fill-opacity=".75" stroke="#86efac" stroke-opacity=".6"/></g><g class="leaf" style="animation-delay:0.15s"><ellipse cx="207" cy="215" rx="17" ry="7" transform="rotate(-28 207 215)" fill="#22c55e" fill-opacity=".75" stroke="#86efac" stroke-opacity=".6"/></g><g class="leaf" style="animation-delay:0.3s"><ellipse cx="173" cy="175" rx="17" ry="7" transform="rotate(28 173 175)" fill="#22c55e" fill-opacity=".75" stroke="#86efac" stroke-opacity=".6"/></g><g class="bloom"><line class="bond" x1="188.3" y1="69.94" x2="197.83" y2="75.44"/><line class="bond" x1="191.7" y1="64.06" x2="201.23" y2="69.56"/><line class="flow" style="animation-delay:-0s" x1="190" y1="67" x2="199.53" y2="72.5"/><line class="bond" x1="199.53" y1="72.5" x2="199.53" y2="83.5"/><line class="bond" x1="197.83" y1="80.56" x2="188.3" y2="86.06"/><line class="bond" x1="201.23" y1="86.44" x2="191.7" y2="91.94"/><line class="bond" x1="190" y1="89" x2="180.47" y2="83.5"/><line class="bond" x1="183.87" y1="83.5" x2="183.87" y2="72.5"/><line class="bond" x1="177.07" y1="83.5" x2="177.07" y2="72.5"/><line class="bond" x1="180.47" y1="72.5" x2="190" y2="67"/><g class="pulse" style="animation-delay:-0s"><circle cx="190" cy="67" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-0.45s"><circle cx="199.53" cy="72.5" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-0.9s"><circle cx="199.53" cy="83.5" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-1.35s"><circle cx="190" cy="89" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-1.8s"><circle cx="180.47" cy="83.5" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-2.25s"><circle cx="180.47" cy="72.5" r="4" fill="url(#aG)"/></g></g><g opacity="0"><circle cx="-6" cy="3" r="4" fill="url(#aG)"/><circle cx="6" cy="3" r="4" fill="url(#aG)"/><circle cy="-5" r="4.5" fill="url(#aS)"/>
+      <animateMotion path="M190 78Q345 2 500 180" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.55;0.75;1"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.545;0.55;0.74;0.76;1" dur="8s" repeatCount="indefinite"/></g><path class="grow" d="M290 300C278 250 304 190 290 130" stroke="#4ade80" stroke-width="4" fill="none" stroke-linecap="round"/><g class="leaf" style="animation-delay:0s"><ellipse cx="273" cy="255" rx="17" ry="7" transform="rotate(28 273 255)" fill="#22c55e" fill-opacity=".75" stroke="#86efac" stroke-opacity=".6"/></g><g class="leaf" style="animation-delay:0.15s"><ellipse cx="307" cy="215" rx="17" ry="7" transform="rotate(-28 307 215)" fill="#22c55e" fill-opacity=".75" stroke="#86efac" stroke-opacity=".6"/></g><g class="leaf" style="animation-delay:0.3s"><ellipse cx="273" cy="175" rx="17" ry="7" transform="rotate(28 273 175)" fill="#22c55e" fill-opacity=".75" stroke="#86efac" stroke-opacity=".6"/></g><g class="bloom"><line class="bond" x1="288.3" y1="107.94" x2="297.83" y2="113.44"/><line class="bond" x1="291.7" y1="102.06" x2="301.23" y2="107.56"/><line class="flow" style="animation-delay:-0s" x1="290" y1="105" x2="299.53" y2="110.5"/><line class="bond" x1="299.53" y1="110.5" x2="299.53" y2="121.5"/><line class="bond" x1="297.83" y1="118.56" x2="288.3" y2="124.06"/><line class="bond" x1="301.23" y1="124.44" x2="291.7" y2="129.94"/><line class="bond" x1="290" y1="127" x2="280.47" y2="121.5"/><line class="bond" x1="283.87" y1="121.5" x2="283.87" y2="110.5"/><line class="bond" x1="277.07" y1="121.5" x2="277.07" y2="110.5"/><line class="bond" x1="280.47" y1="110.5" x2="290" y2="105"/><g class="pulse" style="animation-delay:-0s"><circle cx="290" cy="105" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-0.45s"><circle cx="299.53" cy="110.5" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-0.9s"><circle cx="299.53" cy="121.5" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-1.35s"><circle cx="290" cy="127" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-1.8s"><circle cx="280.47" cy="121.5" r="4" fill="url(#aG)"/></g><g class="pulse" style="animation-delay:-2.25s"><circle cx="280.47" cy="110.5" r="4" fill="url(#aG)"/></g></g><g opacity="0"><circle cx="-6" cy="3" r="4" fill="url(#aG)"/><circle cx="6" cy="3" r="4" fill="url(#aG)"/><circle cy="-5" r="4.5" fill="url(#aS)"/>
+      <animateMotion path="M290 116Q395 40 500 180" dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.6;0.8;1"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.595;0.6;0.79;0.81;1" dur="8s" repeatCount="indefinite"/></g><text x="500" y="44" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" fill="#34d399" text-anchor="middle">your personalized mix</text>
+  <g clip-path="url(#vc)">
+    <rect x="420" y="252" width="160" height="100" fill="url(#liq)" fill-opacity=".75"><animate attributeName="y" values="252;252;150;150;252" keyTimes="0;0.55;0.85;0.95;1" dur="8s" repeatCount="indefinite"/></rect>
+    <circle class="bub" style="animation-delay:-0s" cx="470" cy="242" r="5" fill="#ecfdf5"/><circle class="bub" style="animation-delay:-0.7s" cx="500" cy="246" r="4" fill="#ecfdf5"/><circle class="bub" style="animation-delay:-1.3s" cx="528" cy="240" r="5" fill="#ecfdf5"/><circle class="bub" style="animation-delay:-1.9s" cx="488" cy="238" r="3" fill="#ecfdf5"/>
+  </g>
+  <path d="M482 70H518V108C560 120 575 152 575 182C575 224 542 250 500 250C458 250 425 224 425 182C425 152 440 120 482 108Z" fill="none" stroke="#34d399" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="476" y="58" width="48" height="14" rx="4" fill="#a16207"/>
+  <path d="M440 170C445 150 455 136 470 128" stroke="#fff" stroke-opacity=".25" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle class="tw" style="animation-delay:-0.19s" cx="173.93" cy="70.81" r="0.96" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-2.76s" cx="258.88" cy="135.94" r="1.93" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-3.34s" cx="104.83" cy="127.33" r="2" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-2.76s" cx="412.5" cy="83.01" r="1.3" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-3.5s" cx="98.19" cy="279.5" r="1.48" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-3.88s" cx="400.43" cy="80.77" r="0.85" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-2.96s" cx="186.62" cy="53.72" r="1.74" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-0.1s" cx="279.73" cy="70.47" r="1.9" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-1.17s" cx="304.93" cy="117.17" r="0.9" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-3.46s" cx="596.31" cy="169.63" r="1.83" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-3.21s" cx="583.48" cy="255.5" r="1.35" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-1.86s" cx="258.32" cy="143.19" r="1.67" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-2.92s" cx="101.54" cy="57.38" r="1.08" fill="#e0f2fe"/><circle class="tw" style="animation-delay:-3.51s" cx="129.46" cy="181.28" r="0.74" fill="#e0f2fe"/>
+  </g>
+  <rect x=".5" y=".5" width="659" height="351" rx="18" fill="none" stroke="#34d399" stroke-opacity=".22"/>
+</g>
+<text x="728" y="72" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="14" font-weight="700" letter-spacing="2.5" fill="#34d399">05 / FOUNDER · BOTANY</text>
+<rect x="1041" y="54" width="107" height="26" rx="13" fill="#fbbf24" fill-opacity=".14" stroke="#fbbf24" stroke-opacity=".7"/>
+       <circle class="pulse" cx="1056" cy="67" r="3.5" fill="#fbbf24"/>
+       <text x="1069" y="71.5" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2" fill="#fbbf24">FOUNDER</text>
+<text x="726" y="126" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="800" fill="#f8fafc">Plantiva Sciences</text>
+<rect class="ul" x="728" y="140" width="56" height="4" rx="2" fill="#34d399"/>
+<text x="728" y="178" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="17.5" fill="#cbd5e1">I founded Plantiva Sciences, an interactive</text><text x="728" y="203" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="17.5" fill="#cbd5e1">botanical platform for building personalized</text><text x="728" y="228" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="17.5" fill="#cbd5e1">medicinal plant mixtures.</text>
+<path d="M735 249L741.06 252.5L741.06 259.5L735 263L728.94 259.5L728.94 252.5Z" fill="#34d399" fill-opacity=".25" stroke="#34d399" stroke-width="1.5"/><text x="752" y="262" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" fill="#e2e8f0">Founder &amp; builder, 2025 – 2026</text><path d="M735 275L741.06 278.5L741.06 285.5L735 289L728.94 285.5L728.94 278.5Z" fill="#34d399" fill-opacity=".25" stroke="#34d399" stroke-width="1.5"/><text x="752" y="288" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" fill="#e2e8f0">Personalized medicinal plant mixtures</text><path d="M735 301L741.06 304.5L741.06 311.5L735 315L728.94 311.5L728.94 304.5Z" fill="#34d399" fill-opacity=".25" stroke="#34d399" stroke-width="1.5"/><text x="752" y="314" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" fill="#e2e8f0">Also founded Organickly (biofertilizers)</text>
+<rect x="728" y="338" width="81.3" height="30" rx="15" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".45"/><text x="768.65" y="358" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="600" fill="#e2e8f0" text-anchor="middle">Startup</text><rect x="817.3" y="338" width="73.4" height="30" rx="15" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".45"/><text x="854" y="358" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="600" fill="#e2e8f0" text-anchor="middle">Botany</text><rect x="898.7" y="338" width="120.8" height="30" rx="15" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".45"/><text x="959.1" y="358" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="600" fill="#e2e8f0" text-anchor="middle">Phytotherapy</text>
+<rect x="1" y="1" width="1198" height="398" rx="24" fill="none" stroke="url(#border)" stroke-width="2"/>
+</svg>

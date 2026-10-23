@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="298" height="60" viewBox="0 0 298 60">
+<title>View source on GitHub</title>
+<defs>
+  <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+  <clipPath id="c"><rect x="1" y="1" width="296" height="58" rx="29"/></clipPath>
+</defs>
+<style>
+  .sh{animation:sh 3.5s ease-in-out infinite}
+  @keyframes sh{0%,55%{transform:translateX(-120px)}100%{transform:translateX(358px)}}
+  .ring{transform-box:fill-box;transform-origin:center;animation:ring 2s ease-out infinite}
+  @keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.5);opacity:0}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="1" y="1" width="296" height="58" rx="29" fill="#0b1020" stroke="#fbbf24" stroke-width="2"/>
+
+<text x="34" y="36" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="17" font-weight="800" fill="#fbbf24" text-anchor="middle">&lt;/&gt;</text>
+<text x="62" y="27" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="800" fill="#f8fafc">View source on GitHub</text>
+<text x="62" y="45" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#94a3b8">ayoubriad1/pocketbox</text>
+</svg>
